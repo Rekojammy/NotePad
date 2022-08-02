@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorD PaD</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://use.fontawesome.com/4c97752ffe.js"></script>
+
+</head>
+
+<body>
+    <section class="tab">
+        <div class="nav">
+            <div class="selected">
+                <select class="select" id="font-family">
+                    <option value="">Font Family</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="sans-serif">San Serif</option>
+                    <option value="monospace">Monospace</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Arial">Arial</option>
+                </select>
+
+                <select class="select" id="font-size">
+                    <option value="">Font Size</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                    <option value="60">60</option>
+                </select>
+
+                <input type="color" id="color">
+            </div>
+            <div class="colsec">
+                <button type="button" id="capCase">A</button>
+                <button type="button" id="senCase">Ab</button>
+                <button type="button" id="smaCase">ab</button>
+            </div>
+
+            <div class="font-style" id="style">
+                <button type="button" id="bold" style="font-weight: 800;">B</button>
+                <button type="button" id="italic"><i class="fa-solid fa-italic"></i></button>
+                <button type="button" id="underline"><u>&#8899;</u></button>
+            </div>
+
+            <div class="align" id="align">
+                <button type="button" id="left"><i class="fa-solid fa-align-left"></i></button>
+                <button type="button" id="center"><i class="fa-solid fa-align-justify"></i></button>
+                <button type="button" id="right"><i class="fa-solid fa-align-right"></i></button>
+            </div>
+
+            <div class="link align">
+                <button type="button" id="speak"><i class="fa-solid fa-volume-high"></i></button>
+                <!-- Select Menu for Voice -->
+                <select id="voices" class="dropdown form-select bg-secondary text-light">
+                    <option value=" "> </option>
+                </select>
+            </div>
+        </div>
+
+        <div type="text" class="text-area" id="text-area" contenteditable="true"></div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
